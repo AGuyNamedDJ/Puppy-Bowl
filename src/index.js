@@ -8,4 +8,7 @@ const puppyBowlRosterArr = ["Contestant", "Kenny"]
 const Contestants = () => {
     // This is an empty starter plate;
     const [contestant, setContestant] = useState([])
+
+    // Fetch Data
+    
 }
