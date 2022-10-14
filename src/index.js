@@ -1,5 +1,23 @@
-import React, { useEffect } from "react";
+import React, { useState } from "react";
 import { createRoot } from "react-dom/client";
+
+const PuppyBowl = () => {
+    return (
+        <div>
+            <h1>Puppy Bowl</h1>
+            <div>
+            (
+                
+
+
+
+            )
+
+
+            </div>
+        </div>
+    )
+};
 
 // Writing Starter Code
 const puppyBowlRosterArr = ["Contestant", "Kenny"]
@@ -19,10 +37,10 @@ const Contestants = () => {
                 // Will TRY to run the code;
             try {
                 // Fetch method that will get some data from the URL;
-                const response = await fetch ("https://fsa-puppy-bowl.herokuapp.com");
+                const response = await fetch ("https://fsa-puppy-bowl.herokuapp.com/api/2209-ftb-mt-web-ft/players");
 
                 // Convert promise response into JSON;
-                const data = await response.json();
+                const puppyData = await response.json();
                 console.log("Here is the translated data from the promise response: ", data)
                 console.log("Here is the REAL data from the above translated data", data.results)
 
