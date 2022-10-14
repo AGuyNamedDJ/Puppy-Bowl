@@ -1,0 +1,38 @@
+{
+  "name": "puppy-bowl",
+  "version": "1.0.0",
+  "description": "Most people, even if they haven't watched it, have heard of the Super Bowl. But have you ever heard of the \"Puppy Bowl\"? Well, it's quite literally a Super Bowl level event, only for puppies competing to be the cutest amongst themselves!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "react-scripts start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DJRobertson95/Puppy-Bowl.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DJRobertson95/Puppy-Bowl/issues"
+  },
+  "homepage": "https://github.com/DJRobertson95/Puppy-Bowl#readme",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

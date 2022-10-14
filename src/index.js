@@ -11,7 +11,7 @@ const Contestants = () => {
     const [contestant, setContestant] = useState([])
 
     // Fetch Data
-    useEffect(() = > {
+    useEffect(() => {
         // Here we are grabbing data from the Puppl Bowl API
         async function fetchPuppyBowlData () {
 
@@ -41,6 +41,6 @@ const Contestants = () => {
         fetchPuppyBowlData;
 
     }, [])
-    // ask what this mean because i don't understand it
+    // Ask what this mean because I don't understand it
 
 }
