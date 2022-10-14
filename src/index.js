@@ -3,6 +3,7 @@ import { createRoot } from "react-dom/client";
 
 // Writing Starter Code
 const puppyBowlRosterArr = ["Contestant", "Kenny"]
+    // update when found
 
 // Declaring State
 const Contestants = () => {
@@ -36,8 +37,10 @@ const Contestants = () => {
 
             }
 
-        };
+        }
+        fetchPuppyBowlData;
 
-    })
+    }, [])
+    // ask what this mean because i don't understand it
 
 }
