@@ -35,9 +35,6 @@ ReactDOM.render(<RouterProvider router={router} />, document.getElementById("app
     // The router provider will be the top most parent component
         // then Homepage
 
-
-const PuppyBowl = () => {
-
 // Writing Starter Code
 
 // Declaring State
