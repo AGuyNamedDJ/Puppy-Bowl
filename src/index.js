@@ -45,18 +45,19 @@ const PuppyBowl = () => {
     return (
         <div>
             <h1>Puppy Bowl</h1>
+
             <div>
-            {
-                contestants && contestants.length ? puppyPlayers.map((puppy, idx) => {
-                    // Terenary ^
-                   return <div key={idx}>
-                        <p>Name of Contestant: (puppy.name}</p>
+                {
+                    contestants && contestants.length ? puppyPlayers.map((puppy, idx) => {
+                        // Terenary ^
+                    return <div key={idx}>
+                        <p>Name of Contestant: {puppy.name}</p>
                         <p>Pup Breed: {puppy.breed}</p>
-                        <img src={puppy.imageUrl}></img>
-                    </div>
+                        <img src={puppy.imageUrl}></img>    
+                    </div>               
                 }) : <p>No pups to display:</p>
-            }
-            </div>
+            } 
+            </div>   
         </div>
     )
-};
+}};
