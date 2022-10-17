@@ -16,8 +16,16 @@ const router = createBrowserRouter((
             // mimicks the parent
             {
                 path: "/Settings",
-                element: <Settings />
-            }
+                element: <settings />
+            },
+            {
+                path: "/About",
+                element: <about />
+            },
+            {
+                path: "/allPups",
+                element: <allpups />
+            },
         }
     }
 ))
