@@ -1,6 +1,6 @@
-import React from "react";
+import React, {useState} from "react";
 import Navbar from "./NavBar";
-import { Outlet } from "react-router";
+import { Outlet } from "react-router-dom";
 
 const Homepage = () => {
     return (
@@ -11,4 +11,6 @@ const Homepage = () => {
             <Outlet />
         </div>
     )
-}
+};
+
+export default Homepage; 
