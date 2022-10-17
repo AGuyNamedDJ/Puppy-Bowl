@@ -93,7 +93,7 @@ const PuppyBowl = () => {
             </div>   
         </div>
     )
-}};
+};
 
 
 ReactDOM.render(<Contestants />, document.getElementById("app"))
