@@ -36,25 +36,26 @@ const PuppyBowl = () => {
                 // Will run if the TRY section fails to run;
             } catch (error){
                 console.log(error)
-
             }
-
         }
-        fetchPuppyBowlData;
-
+        fetchPuppyBowlData()
     }, [])
+
+    // Rendering the Game State
     return (
         <div>
             <h1>Puppy Bowl</h1>
             <div>
-            (
-                
-
-
-
-            )
-
-
+            {
+                contestants && contestants.length ? puppyPlayers.map((puppy, idx) => {
+                    // Terenary ^
+                   return <div key={idx}>
+                        <p>Name of Contestant: (puppy.name}</p>
+                        <p>Pup Breed: {puppy.breed}</p>
+                        <img src={puppy.imageUrl}></img>
+                    </div>
+                }) : <p>No pups to display:</p>
+            }
             </div>
         </div>
     )
