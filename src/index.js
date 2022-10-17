@@ -1,6 +1,13 @@
 import React, { useEffect, useState} from 'react';
 import ReactDOM from 'react-dom';
 
+// Import CreateBrowserRouter Method from Dependency
+import { createBrowserRouter } from "react-router-dom";
+
+// Now we need to use the brower in the index.js entry file to make a router instance
+    // One argument needed
+        // [] of objects; every object is an individual route of our react application
+
 const PuppyBowl = () => {
 
 // Writing Starter Code
@@ -56,6 +63,7 @@ const PuppyBowl = () => {
                         <img src={pup.imageUrl}></img>    
                     </div>               
                 }) : <div>No pups to display, someone is biting the server cords...</div>
+                    // This is for the Truthy half of terenary
             } 
             </div>   
         </div>
