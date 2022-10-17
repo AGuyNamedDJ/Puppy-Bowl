@@ -1,23 +1,8 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { createRoot } from "react-dom/client";
 
 const PuppyBowl = () => {
-    return (
-        <div>
-            <h1>Puppy Bowl</h1>
-            <div>
-            (
-                
 
-
-
-            )
-
-
-            </div>
-        </div>
-    )
-};
 
 // Writing Starter Code
 const puppyBowlRosterArr = ["Contestant", "Kenny"]
@@ -59,6 +44,19 @@ const Contestants = () => {
         fetchPuppyBowlData;
 
     }, [])
-    // Ask what this mean because I don't understand it
+    return (
+        <div>
+            <h1>Puppy Bowl</h1>
+            <div>
+            (
+                
 
-}
+
+
+            )
+
+
+            </div>
+        </div>
+    )
+};
