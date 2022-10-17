@@ -3,6 +3,7 @@ import React from "react";
 // How to create a Navbar
 // 1) Get Link from React-Router-Dom
 import { Link, link } from "React-router-dom";
+    // the link element creates links 
 
 const Navbar = () => {
     return (
