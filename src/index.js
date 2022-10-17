@@ -48,16 +48,19 @@ const PuppyBowl = () => {
 
             <div>
                 {
-                    contestants && contestants.length ? puppyPlayers.map((puppy, idx) => {
+                    contestants && contestants.length ? puppyPlayers.map((pup, idx) => {
                         // Terenary ^
                     return <div key={idx}>
-                        <p>Name of Contestant: {puppy.name}</p>
-                        <p>Pup Breed: {puppy.breed}</p>
-                        <img src={puppy.imageUrl}></img>    
+                        <p>Name of Contestant: {pup.name}</p>
+                        <p>Pup Breed: {pup.breed}</p>
+                        <img src={pup.imageUrl}></img>    
                     </div>               
-                }) : <p>No pups to display:</p>
+                }) : <div>No pups to display, someone is biting the server cords...</div>
             } 
             </div>   
         </div>
     )
 }};
+
+
+ReactDOM.render(<Contestants />, document.getElementById("app"))
