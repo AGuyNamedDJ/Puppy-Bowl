@@ -48,9 +48,9 @@ const Homepage = () => {
                     contestants && contestants.length ? puppyPlayers.map((pup, idx) => {
                         // Terenary ^
                     return <div key={idx}>
-                        <p>Name of Contestant: {pup.name}</p>
-                        <p>Pup Breed: {pup.breed}</p>
-                        <img src={pup.imageUrl}></img>    
+                        <p id="name">Name of Contestant: {pup.name}</p>
+                        <p id="breed">Pup Breed: {pup.breed}</p>
+                        <img id="pups" src={pup.imageUrl}></img>    
                     </div>               
                 }) : <div>No pups to display, someone is biting the server cords...</div>
                     // This is for the Truthy half of terenary

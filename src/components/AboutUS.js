@@ -4,7 +4,7 @@ import React from "react";
 // Create the Page;
 const AboutUs = () => {
     return (
-        <div>
+        <div id="font">
             <p>More Updates Coming Soon! </p>
         </div>
     )

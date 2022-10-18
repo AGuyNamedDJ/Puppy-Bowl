@@ -8,7 +8,7 @@ const AllPups = () => {
     console.log("This is our outlet context: ", OutletContext); 
 
     return (
-        <div>
+        <div id="font">
             <p>Check out our Pup Contestants! </p>
             {
                 OutletContext[0].map((puppy, idx) => {

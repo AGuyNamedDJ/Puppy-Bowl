@@ -2,7 +2,7 @@ import React from "react";
 
 const Settings = () => {
     return (
-        <div>
+        <div id="font">
             <p>Settings Tab</p>
         </div>
     )

@@ -1,9 +1,17 @@
 body {
+    background-color: white;
+    display: flex;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     height: 150px;
     margin: 0;
     width: 150px;
   }
+
+  #breed {
+    font-size: 10pt;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+    word-wrap: break-word;
   
   #navbar {
     align-items: center;
