@@ -3,22 +3,36 @@ body {
     display: flex;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     height: 150px;
+    justify-content: space-between;
     margin: 0;
+    text-align: center;
     width: 150px;
-  }
+}
 
   #breed {
     font-size: 10pt;
     text-align: center;
-    font-family:Verdana, Geneva, Tahoma, sans-serif
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     word-wrap: break-word;
+}
+
+  #font {
+    box-sizing: border-box;
+    font-size: 20pt;
+    text-align: center;
+}
   
   #navbar {
     align-items: center;
-    background-color: brown,
+    background-color: brown;
     color: white;
     display: flex;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     max-height: 8%;
     min-height: 40px;
-  }
+}
+
+#pups {
+  height: 350px;
+  width: 350px;
+}
