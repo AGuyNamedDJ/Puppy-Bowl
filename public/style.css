@@ -1,38 +1,38 @@
 body {
-    background-color: white;
-    display: flex;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    height: 150px;
-    justify-content: space-between;
-    margin: 0;
-    text-align: center;
-    width: 150px;
+  background-color: #7D5C43;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
-  #breed {
-    font-size: 10pt;
-    text-align: center;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    word-wrap: break-word;
+
+button {
+  margin-top: 5px;
 }
 
-  #font {
-    box-sizing: border-box;
-    font-size: 20pt;
-    text-align: center;
-}
-  
-  #navbar {
-    align-items: center;
-    background-color: brown;
-    color: white;
-    display: flex;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    max-height: 8%;
-    min-height: 40px;
+.puppy-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 
-#pups {
-  height: 350px;
-  width: 350px;
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border: 6px solid rgba(205, 127, 50, 0.500);
+  border-radius: 5px;
+  margin: 10px 10px 10px 10px;
+  padding: 10px 10px 10px 10px;
+  max-width: 250px;
+  box-shadow: 8px 8px rgba(0, 0, 0, 0.470);
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.puppy-pic {
+  border-radius: 10px;
 }

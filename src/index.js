@@ -1,43 +1,53 @@
-import React, { useEffect, useState} from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client'
+import React, {useEffect, useState} from 'react';
 
-// Import CreateBrowserRouter Method from Dependency
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-// Imported our Pages
-import AllPups from "./components/AllPups";
-import AboutUs from "./components/AboutUs";
-import ErrorPage from "./components/ErrorPage";
-import Homepage from "./components/Homepage";
-import Settings from "./components/Settings";
+const HomePage = () => {
 
-// Now we need to use the brower in the index.js entry file to make a router instance
-    // One argument needed
-        // [] of objects; every object is an individual route of our react application
-const router = createBrowserRouter([
-    {
-        path: "/",
-        element: < Homepage />,
-        errorElement:  < ErrorPage />,
-        children: [
-            // mimicks the parent
-            {
-                path: "/about",
-                element: <AboutUs />
-            },
-            {
-                path: "/allpups",
-                element: <AllPups />
-            },
-            {
-                path: "/settings",
-                element: <Settings />
+    // Declaring the state (an empty array for now);
+    const [puppyList, setPuppyList] = useState([]);
+
+    // Fetching data
+    useEffect(() => {
+        async function fetchPuppyBowlData () {
+            try {
+                const response = await fetch(" https://fsa-puppy-bowl.herokuapp.com/api/2209-FTB-MT-WEB-FT/players");
+                const results = await response.json();
+                // Set state
+                // console.log(results.data.players);
+                setPuppyList(results.data.players);
+            } catch (error) {
+                console.log(error);
             }
-        ]
-    }]
-);
+        }
+        fetchPuppyBowlData();
+    }, []); // Runs only on the first render
 
-// Now you have to connect the router to the DOM
-ReactDOM.render(<RouterProvider router={router} />, document.getElementById("app"))
-    // The router provider will be the top most parent component
-        // then Homepage
+    return (
+        <div className="puppy-container">
+            {
+                puppyList && puppyList.length ? puppyList.map((indivPuppy, idx) => {
+                    // console.log(indivPuppy);
+                    return (
+                        <div key={idx} className="card">
+                            <div className="title">
+                                <h1>{indivPuppy.name}</h1>
+                                <h3># {indivPuppy.id}</h3>
+                            </div>
+                            <img className="puppy-pic" src={indivPuppy.imageUrl} />
+                            <button>See Details</button>
+                            <button>Delete From Roster</button>
+                        </div>
+                    )
+                }) : <div>Puppy Servers are currently down- please try again later.</div>
+            }
+        </div>
+    )
+}
+
+
+const appElement = document.getElementById("app");
+const root = createRoot(appElement);
+
+root.render(<HomePage />);
+// ReactDOM.render(<HomePage />, document.getElementById("app")); // v17
