@@ -39,7 +39,7 @@ const HomePage = () => {
                             <button>Delete From Roster</button>
                         </div>
                     )
-                }) : <div>Puppy Servers are currently down- please try again later.</div>
+                }) : <div>Puppy Servers are currently down - the Pups got out!</div>
             }
         </div>
     )
