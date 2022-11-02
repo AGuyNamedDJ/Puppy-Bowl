@@ -42,11 +42,10 @@ const HomePage = () => {
             }
         </div>
     )
-}
+};
 
 
 const appElement = document.getElementById("app");
 const root = createRoot(appElement);
 
 root.render(<HomePage />);
-// ReactDOM.render(<HomePage />, document.getElementById("app")); // v17
