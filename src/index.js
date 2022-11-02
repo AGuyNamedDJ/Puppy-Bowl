@@ -13,8 +13,7 @@ const HomePage = () => {
             try {
                 const response = await fetch(" https://fsa-puppy-bowl.herokuapp.com/api/2209-FTB-MT-WEB-FT/players");
                 const results = await response.json();
-                // Set state
-                // console.log(results.data.players);
+            // Set state
                 setPuppyList(results.data.players);
             } catch (error) {
                 console.log(error);
@@ -23,11 +22,11 @@ const HomePage = () => {
         fetchPuppyBowlData();
     }, []); // Runs only on the first render
 
+    // Return to Screen
     return (
         <div className="puppy-container">
             {
                 puppyList && puppyList.length ? puppyList.map((indivPuppy, idx) => {
-                    // console.log(indivPuppy);
                     return (
                         <div key={idx} className="card">
                             <div className="title">
